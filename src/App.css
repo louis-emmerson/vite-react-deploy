@@ -73,13 +73,31 @@ h1{
 
 
 
-#grocery-app{
-    width: 500px;
+#grocery-app {
+    width: 90%; /* Set a flexible width to adapt to different screen sizes */
+    max-width: 500px; /* Limit the width on larger screens */
     background-color: #034f84;
     border-radius: 10px;
     padding-top: 1px;
     box-shadow: 10px 10px 10px #000c1555;
+    margin: auto; /* Center the container */
 }
+
+/* Media query for larger screens (desktop) */
+@media (min-width: 768px) {
+    #grocery-app {
+        width: 500px; /* Full width for desktop view */
+    }
+}
+
+/* Optional: Further refine for very small screens */
+@media (max-width: 400px) {
+    #grocery-app {
+        width: 100%; /* Take full width on very small screens */
+        padding: 10px; /* Add padding for better spacing on small screens */
+    }
+}
+
 
 #recipe-item{
     background-color: #f7cac9;
